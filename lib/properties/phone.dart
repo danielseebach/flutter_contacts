@@ -103,6 +103,9 @@ class Phone {
         types.add(v4 ? 'text' : 'msg');
         types.add('work');
         break;
+      case PhoneLabel.work:
+        types.add('work');
+        break;
       case PhoneLabel.pager:
         types.add('pager');
         break;
