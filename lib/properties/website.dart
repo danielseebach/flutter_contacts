@@ -44,7 +44,7 @@ class Website {
   List<String> toVCard() {
     // URL (V3): https://tools.ietf.org/html/rfc2426#section-3.6.8
     // URL (V4): https://tools.ietf.org/html/rfc6350#section-6.7.8
-    return ['URL:${vCardEncode(url)}'];
+    return ['URL;TYPE=$label:${vCardEncode(url)}'];
   }
 }
 
